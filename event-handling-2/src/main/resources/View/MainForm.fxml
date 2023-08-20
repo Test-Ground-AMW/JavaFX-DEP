@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="493.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="282.0" layoutY="60.0" style="-fx-background-color: lightblue; -fx-background-radius: 10;" text="Event Handling - II" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtInput" layoutX="100.0" layoutY="134.0" prefHeight="24.0" prefWidth="400.0" />
+      <Button fx:id="btnAdd" layoutX="546.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnAddOnAction" text="Add" />
+      <ListView fx:id="lvItems" layoutX="100.0" layoutY="179.0" onKeyPressed="#lvItemsOnKeyPressed" prefHeight="225.0" prefWidth="490.0" />
+      <Text layoutX="100.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter something to add">
+         <font>
+            <Font name="Chandas" size="13.0" />
+         </font></Text>
+      <Button fx:id="btnRemove" layoutX="518.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" text="Remove" />
+      <Label fx:id="lblCount" layoutX="100.0" layoutY="432.0" text="Label" />
+   </children>
+</AnchorPane>
